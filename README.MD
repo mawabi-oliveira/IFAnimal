@@ -1,6 +1,6 @@
 # IFAnimal 🐾
 
-O **IFAnimal** é uma plataforma para um projeto social dedicado à proteção, cuidado e adoção de gatinhos do IFAL (Instituto Federal, campus Maceió)em Maceió - AL. O sistema conecta animais resgatados a novos lares e divulga as ações e métricas do projeto.
+O **IFAnimal** é uma plataforma para um projeto social dedicado à proteção, cuidado e adoção de gatinhos do IFAL (Instituto Federal, campus Maceió) em Maceió - AL. O sistema conecta animais resgatados a novos lares e divulga as ações e métricas do projeto.
 
 ## 🚀 Tecnologias
 
