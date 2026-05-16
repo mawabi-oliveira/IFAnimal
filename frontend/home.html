@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFAnimal - Home</title>
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./img/inseridos/ifanimal-logo.jpg" alt="IFAnimal Logo">
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="./home.html" class="active">INÍCIO</a></li>
+            <img src="./img/inseridos/pegada.png" alt="pegada" class="paw-icon">
+
+            <li><a href="adotar.html">ADOTAR</a></li>
+            <img src="./img/inseridos/pegada.png" alt="pegada" class="paw-icon">
+
+            <li><a href="./sobre.html">SOBRE NÓS</a></li>
+
+        </ul>
+    </nav>
+
+    <main class="container-principal">
+        <div class="frase-principal">
+            <h1>A proteção dos animais: Uma questão ética, moral e de respeito à vida.</h1>
+        </div>
+
+        <section class="carrossel-container">
+            <div class="carrossel-wrapper">
+                <button class="seta-carrossel">❮</button>
+                <div class="carrossel-fotos">
+                    <img src="./img/gatos/cat-1.jpeg" alt="Gato 1" class="foto-secundaria">
+                    <img src="./img/gatos/cat-2.jpeg" alt="Gato 2" class="foto-principal">
+                    <img src="./img/gatos/cat-3.jpeg" alt="Gato 3" class="foto-secundaria">
+                </div>
+                <button class="seta-carrossel">❯</button>
+            </div>
+
+            <div class="indicadores">
+            </div>
+        </section>
+
+        <div class="chamada-adocao">
+            <h2>ADOTE UM GATINHO</h2>
+            <p>Conheça alguns de nossos miaumigos</p>
+        </div>
+
+        <section class="container-gatos">
+            <div class="card">
+                <img src="./img/gatos/cat-1.jpeg" alt="Ameixa">
+                <div class="card-info">
+                    <div class="nome-idade">
+                        <h3>Ameixa</h3>
+                        <span class="idade">2 anos</span>
+                    </div>
+                    <span class="origem">IFAnimal</span>
+                </div>
+                <form action="/adotar.html" method="get">
+                    <button class="adotar-btn" type="submit">QUERO ADOTAR</button>
+                </form>
+            </div>
+
+            <div class="card">
+                <img src="./img/gatos/cat-2.jpeg" alt="Safira">
+                <div class="card-info">
+                    <div class="nome-idade">
+                        <h3>Safira</h3>
+                        <span class="idade">3 anos</span>
+                    </div>
+                    <span class="origem">IFAnimal</span>
+                </div>
+                <form action="/adotar.html" method="get">
+                    <button class="adotar-btn" type="submit">QUERO ADOTAR</button>
+                </form>
+            </div>
+
+            <div class="card">
+                <img src="./img/gatos/cat-3.jpeg" alt="Roberto">
+                <div class="card-info">
+                    <div class="nome-idade">
+                        <h3>Roberto</h3>
+                        <span class="idade">2 anos</span>
+                    </div>
+                    <span class="origem">Comunidade</span>
+                </div>
+                <form action="/adotar.html" method="get">
+                    <button class="adotar-btn" type="submit">QUERO ADOTAR</button>
+                </form>
+            </div>
+
+        <div class="ver-todos-container" style="text-align: center; margin-top: 60px; margin-bottom: 80px;">
+            <a href="adotar.html" class="adotar-btn" style="text-decoration: none; padding: 15px 40px;">
+                VER TODOS OS MIAUMIGOS
+            </a>
+        </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>IFAnimal - Projeto Social. Maceió - AL, Brasil.</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
