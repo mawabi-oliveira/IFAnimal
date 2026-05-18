@@ -1,0 +1,325 @@
+/* --- CONFIGURAÇÕES GERAIS --- */
+/* --- CONFIGURAÇÕES GERAIS --- */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #F8FAFC;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Fundo com padrão de patinhas de gato */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/inseridos/pegada.png'); /* Caminho relativo voltando uma pasta */
+    background-repeat: repeat;
+    background-size: 50px; /* Controla o tamanho das patinhas no fundo */
+    opacity: 0.10; /* Deixa as patinhas bem suaves (4% de opacidade) para não poluir visualmente */
+    z-index: -1; /* Mantém o padrão atrás de todo o conteúdo */
+    pointer-events: none; /* Garante que não interfira nos cliques da página */
+}
+
+.container-principal {
+    max-width: 900px; 
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+}
+
+h1, h2, h3 {
+    color: #14532D;
+    margin: 0;
+}
+
+/* --- NAVBAR --- */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10%;
+    background-color: rgba(255, 255, 255, 0.4);
+    height: 60px; 
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 8%;
+    top: 10px; 
+    z-index: 10;
+}
+
+.logo img {
+    width: 95px; 
+    border-radius: 50%;
+    border: 5px solid white; 
+    background-color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px; 
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #14532D;
+    font-weight: 900;
+    font-size: 0.85rem; 
+    transition: color 0.3s;
+}
+
+.nav-links li a.active, .nav-links li a:hover {
+   color: #0284C7;
+}
+
+.paw-icon {
+    width: 36px; 
+    opacity: 0.8;
+}
+
+/* --- FRASE PRINCIPAL --- */
+.frase-principal {
+    text-align: center;
+    margin: 100px 20px 80px; 
+}
+
+.frase-principal h1 {
+    font-size: 1.9rem; 
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.3;
+    font-weight: 800;
+}
+
+/* --- CARROSSEL --- */
+.carrossel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px; 
+    padding: 20px;
+    margin-bottom: 100px; 
+}
+
+.carrossel-container > div:first-of-type, .carrossel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; 
+    width: 100%;
+}
+
+.carrossel-fotos {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.foto-principal {
+    width: 320px; 
+    height: 200px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.foto-secundaria {
+    width: 150px; 
+    height: 120px;
+    object-fit: cover;
+    border-radius: 15px;
+    opacity: 0.6;
+}
+
+.seta-carrossel {
+    background: white;
+    border: none;
+    border-radius: 50%;
+    width: 35px; 
+    height: 35px;
+    font-size: 16px;
+    color: #14532D;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.seta-carrossel:hover {
+    transform: scale(1.1);
+}
+
+.indicadores {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    margin-top: 5px;
+}
+
+.ponto {
+    width: 10px;
+    height: 10px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    display: block;
+}
+
+.ponto.ativo {
+    background-color: #0284C7;
+    width: 25px;
+    border-radius: 10px;
+}
+
+/* --- CHAMADA ADOÇÃO --- */
+.chamada-adocao {
+    text-align: center;
+    margin: 40px 0 60px; 
+}
+
+.chamada-adocao h2 {
+    color: #14532D;
+    font-size: 2.3rem; 
+    font-weight: 900;
+    line-height: 1;
+}
+
+.chamada-adocao p {
+    color: #1E293B;
+    font-size: 1.1rem; 
+    margin-top: 8px;
+    font-weight: 800;
+}
+
+/* --- CARDS DE GATOS --- */
+.container-gatos {
+    display: flex;
+    justify-content: center;
+    gap: 35px; 
+    padding: 20px 20px 40px; 
+    flex-wrap: wrap;
+    background-color: transparent;
+}
+
+.card {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 20px;
+    padding: 15px; 
+    width: 210px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.card img {
+    width: 100%; 
+    border-radius: 12px;
+    height: 140px; 
+    object-fit: cover;
+    display: block;
+}
+
+.card-info {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 12px 0;
+    color: #1E293B;
+}
+
+.nome-idade {
+    text-align: left;
+}
+
+.nome-idade h3 {
+    font-size: 1.2rem; 
+    font-weight: 900;
+    color: #14532D;
+}
+
+.idade {
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: block;
+    margin-top: 3px;
+}
+
+.origem {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.adotar-btn {
+    background-color: #0284C7;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px; 
+    border-radius: 12px; 
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 0.8rem; 
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.adotar-btn:hover {
+    transform: scale(1.02);
+    background-color: #0369a1;
+}
+
+/* --- FOOTER --- */
+.footer {
+    background-color: #14532D;
+    color: white;
+    text-align: center;
+    padding: 25px 20px; 
+    width: 100%;
+    margin-top: 60px; 
+}
+
+.footer p {
+    color: white;
+    font-size: 0.85rem; 
+    margin: 0;
+    font-weight: 500;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+
+    .logo {
+        position: relative; 
+        left: 0;
+        top: 0;
+        margin-bottom: 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+
+    .paw-icon { display: none; }
+
+    .frase-principal { margin: 40px auto; }
+    .foto-principal { width: 85vw; height: 180px; }
+    .foto-secundaria { display: none; }
+
+    .container-gatos { gap: 25px; }
+    .card { width: 90%; max-width: 280px; }
+}

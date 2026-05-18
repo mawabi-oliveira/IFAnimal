@@ -1,0 +1,173 @@
+/* --- CABEÇALHO DO PAINEL --- */
+.cabecalho-admin {
+    text-align: center;
+    padding: 60px 20px 30px;
+}
+
+.cabecalho-admin h1 {
+    color: #14532D;
+    font-size: 2.2rem;
+    font-weight: 900;
+}
+
+.cabecalho-admin p {
+    color: #1E293B;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+/* --- CONTAINER PRINCIPAL --- */
+.container-admin {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.card-admin {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.secao-admin h2 {
+    color: #14532D;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #E2E8F0;
+    padding-bottom: 10px;
+}
+
+/* --- FORMULÁRIO DE CADASTRO --- */
+.grupo-input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.grupo-input label {
+    color: #1E293B;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.grupo-input input[type="text"],
+.grupo-input select,
+.grupo-input input[type="file"] {
+    padding: 12px;
+    border: 1px solid #CBD5E1;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    color: #1E293B;
+    background-color: #F8FAFC;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.grupo-input input:focus,
+.grupo-input select:focus {
+    border-color: #0284C7;
+}
+
+.linha-inputs {
+    display: flex;
+    gap: 20px;
+}
+
+.linha-inputs .grupo-input {
+    flex: 1;
+}
+
+.btn-admin-salvar {
+    background-color: #0284C7;
+    color: #FFFFFF;
+    border: none;
+    padding: 14px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    cursor: pointer;
+    width: 100%;
+    text-transform: uppercase;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+}
+
+.btn-admin-salvar:hover {
+    background-color: #0369a1;
+}
+
+/* --- TABELA DE ADOÇÕES --- */
+.tabela-responsiva {
+    overflow-x: auto;
+}
+
+.tabela-adocoes {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+.tabela-adocoes th,
+.tabela-adocoes td {
+    padding: 15px;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.tabela-adocoes th {
+    background-color: #F8FAFC;
+    color: #14532D;
+    font-weight: 800;
+}
+
+.tabela-adocoes td {
+    color: #1E293B;
+}
+
+.acoes-botoes {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-acao {
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.btn-acao:active {
+    transform: scale(0.95);
+}
+
+.btn-acao.aprovar {
+    background-color: #22c55e;
+    color: white;
+}
+
+.btn-acao.recusar {
+    background-color: #ef4444;
+    color: white;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+    .linha-inputs {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .card-admin {
+        padding: 20px;
+    }
+}

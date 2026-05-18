@@ -1,0 +1,226 @@
+/* --- CONFIGURAÇÃO DA ÁREA PRINCIPAL --- */
+.fundo-verde {
+    background-color: #F8FAFC;
+    width: 100%;
+    padding: 60px 0 80px;
+    color: #1E293B;
+}
+
+.sobre-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 80px; 
+}
+
+/* --- SEÇÃO 1: INTRODUÇÃO --- */
+.sobre-introducao {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.foto-bloco img {
+    width: 320px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 25px;
+    display: block;
+}
+
+.texto-bloco {
+    text-align: left;
+}
+
+.texto-bloco h1 {
+    color: #14532D;
+    font-size: 2.1rem;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.texto-bloco p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0;
+    color: #1E293B;
+}
+
+/* TÍTULOS DAS SEÇÕES */
+.sobre-impactos h2, .valores-bloco h2 {
+    color: #14532D;
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+/* --- SEÇÃO 2: IMPACTOS EM NÚMEROS --- */
+.impactos-painel {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 25px;
+    padding: 25px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.stat-numero {
+    color: #0284C7;
+    font-size: 2.4rem;
+    font-weight: 900;
+}
+
+.stat-label {
+    color: #1E293B;
+    font-size: 0.75rem;
+    font-weight: 900;
+    margin-top: 5px;
+}
+
+.stat-patinha {
+    width: 28px;
+    height: auto;
+    opacity: 0.9;
+}
+
+/* --- SEÇÃO 3: VALORES E CTA --- */
+.sobre-valores-cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 40px;
+}
+
+.valores-bloco {
+    flex: 1;
+}
+
+.valores-lista {
+    display: flex;
+    gap: 35px;
+}
+
+.valor-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    font-weight: 900;
+    font-size: 1.1rem;
+    color: #1E293B;
+}
+
+.valor-item img {
+    width: 55px;
+    height: auto;
+}
+
+/* BLOCO DE COOPERAÇÃO (CTA) */
+.cta-bloco {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 25px;
+    padding: 30px;
+    max-width: 420px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.cta-bloco h3 {
+    color: #14532D;
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+
+.cta-botoes {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-doar {
+    background-color: #EA580C;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.2s;
+}
+
+.btn-voluntario {
+    background-color: transparent;
+    color: #EA580C;
+    border: 2px solid #EA580C;
+    padding: 11px 18px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.btn-doar:hover, .btn-voluntario:hover {
+    transform: scale(1.03);
+}
+
+.btn-icone {
+    width: 14px;
+    height: auto;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+    .sobre-introducao {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .texto-bloco h1 {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .impactos-painel {
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px;
+    }
+
+    .stat-patinha {
+        transform: rotate(90deg);
+    }
+
+    .sobre-valores-cta {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .valores-lista {
+        justify-content: center;
+    }
+
+    .cta-bloco {
+        width: 100%;
+    }
+}
