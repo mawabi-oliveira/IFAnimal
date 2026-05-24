@@ -1,38 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IFAnimal - Sobre Nós</title>
-    <link rel="stylesheet" href="../public/css/home.css">
-    <link rel="stylesheet" href="../public/css/sobre.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/sobre.css">
 </head>
-
 <body>
-
     <nav class="navbar">
         <div class="logo">
-            <img src="../public/img/inseridos/ifanimal-logo.jpg" alt="IFAnimal Logo">
+            <img src="/img/inseridos/ifanimal-logo.jpg" alt="IFAnimal Logo">
         </div>
-
         <ul class="nav-links">
-            <li><a href="../views/home.html">INÍCIO</a></li>
-            <img src="../public/img/inseridos/pegada-nav.png" alt="pegada" class="paw-icon">
-
-            <li><a href="../views/adotar.html">ADOTAR</a></li>
-            <img src="../public/img/inseridos/pegada-nav.png" alt="pegada" class="paw-icon">
-
-            <li><a href="../views/sobre.html" class="active">SOBRE NÓS</a></li>
+            <li><a href="/views/home.html">INÍCIO</a></li>
+            <img src="/img/inseridos/pegada-nav.png" alt="pegada" class="paw-icon">
+            <li><a href="/views/adotar.html">ADOTAR</a></li>
+            <img src="/img/inseridos/pegada-nav.png" alt="pegada" class="paw-icon">
+            <li><a href="/views/sobre.html" class="active">SOBRE NÓS</a></li>
         </ul>
     </nav>
 
     <main class="fundo-verde">
         <div class="container-principal sobre-layout">
-            
             <section class="sobre-introducao">
                 <div class="foto-bloco">
-                    <img src="../public/img/pessoas/pessoas-ifanimal.jpeg" alt="Equipe IFAnimal">
+                    <img src="/img/pessoas/pessoas-ifanimal.jpeg" alt="Equipe IFAnimal">
                 </div>
                 <div class="texto-bloco">
                     <h1>Conheça o IFAnimal: Nossa missão e amor pelos gatos.</h1>
@@ -47,17 +40,17 @@
                         <span class="stat-numero">+80</span>
                         <span class="stat-label">ADOTADOS</span>
                     </div>
-                    <img src="../public/img/inseridos/cat.png" alt="gato" class="cat-icone">
+                    <img src="/img/inseridos/cat.png" alt="gato" class="cat-icone">
                     <div class="stat-item">
                         <span class="stat-numero">+100KG</span>
                         <span class="stat-label">RAÇÃO DISTRIBUÍDA/MÊS</span>
                     </div>
-                    <img src="../public/img/inseridos/cat.png" alt="gato" class="cat-icone">
+                    <img src="/img/inseridos/cat.png" alt="gato" class="cat-icone">
                     <div class="stat-item">
                         <span class="stat-numero">+10</span>
                         <span class="stat-label">CASTRAÇÃO/MÊS</span>
                     </div>
-                    <img src="../public/img/inseridos/cat.png" alt="gato" class="cat-icone">
+                    <img src="/img/inseridos/cat.png" alt="gato" class="cat-icone">
                     <div class="stat-item">
                         <span class="stat-numero">+100</span>
                         <span class="stat-label">RESGATADOS</span>
@@ -70,15 +63,15 @@
                     <h2>Nossos valores</h2>
                     <div class="valores-lista">
                         <div class="valor-item">
-                            <img src="../public/img/inseridos/cuidado.png" alt="Cuidado">
+                            <img src="/img/inseridos/cuidado.png" alt="Cuidado">
                             <span>Cuidado</span>
                         </div>
                         <div class="valor-item">
-                            <img src="../public/img/inseridos/compromisso.png" alt="Compromisso">
+                            <img src="/img/inseridos/compromisso.png" alt="Compromisso">
                             <span>Compromisso</span>
                         </div>
                         <div class="valor-item">
-                            <img src="../public/img/inseridos/etica.png" alt="Ética">
+                            <img src="/img/inseridos/etica.png" alt="Ética">
                             <span>Ética</span>
                         </div>
                     </div>
@@ -88,21 +81,19 @@
                     <h3>Quer nos ajudar a fazer a diferença? Apoie nosso projeto!</h3>
                     <div class="cta-botoes">
                         <button class="btn-doar" onclick="handleDoar()">
-                            <img src="../public/img/inseridos/diamante.png" alt="Doar" class="btn-icone"> Quero doar
+                            <img src="/img/inseridos/diamante.png" alt="Doar" class="btn-icone"> Quero doar
                         </button>
                         <button class="btn-voluntario" onclick="handleVoluntario()">Quero ser voluntário</button>
                     </div>
                 </div>
             </section>
-
         </div>
     </main>
 
     <footer class="footer">
-        <p>IFAnimal - Projeto Social. Maceió - AL, Brasil.</p>
+        <p>IFAnimal - Projeto Social. Maceió - AL, Brasil. <a href="/views/admin.html" style="color: #cbd5e1; text-decoration: none; margin-left: 15px; font-size: 0.8rem;">🔒 Área Restrita</a></p>
     </footer>
 
-    <script src="../public/js/sobre.js"></script>
+    <script src="/js/sobre.js"></script>
 </body>
-
 </html>

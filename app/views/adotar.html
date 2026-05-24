@@ -1,136 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IFAnimal - Adotar</title>
-    <link rel="stylesheet" href="../public/css/home.css">
-    <link rel="stylesheet" href="../public/css/adotar.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/adotar.css">
+
 </head>
-
-<body>
-
+<body class="fundo-verde">
     <nav class="navbar">
-        <div class="logo">
-            <img src="../public/img/inseridos/ifanimal-logo.jpg" alt="IFAnimal Logo">
+    <div class="logo">
+        <img src="/img/inseridos/ifanimal-logo.jpg" alt="IFAnimal Logo">
+    </div>
+    <ul class="nav-links">
+        <li><a href="/views/home.html">INÍCIO</a></li>
+        <img src="/img/inseridos/pegada-nav.png" alt="pegada" class="paw-icon">
+        <li><a href="/views/adotar.html" class="active">ADOTAR</a></li>
+        <img src="/img/inseridos/pegada-nav.png" alt="pegada" class="paw-icon">
+        <li><a href="/views/sobre.html">SOBRE NÓS</a></li>
+    </ul>
+</nav>
+
+    <main>
+        <header class="cabecalho-adocao"><h1>Conheça nossos gatinhos</h1></header>
+        <section class="galeria-infinita" id="galeria-gatos"></section>
+        
+        <div class="paginacao-container">
+            <button id="btn-anterior" class="btn-paginacao" onclick="mudarPagina(-1)">Anterior</button>
+            <span id="pagina-atual">Página 1</span>
+            <button id="btn-proximo" class="btn-paginacao" onclick="mudarPagina(1)">Próximo</button>
         </div>
-
-        <ul class="nav-links">
-            <li><a href="../views/home.html">INÍCIO</a></li>
-            <img src="../public/img/inseridos/pegada-nav.png" alt="pegada" class="paw-icon">
-
-            <li><a href="../views/adotar.html" class="active">ADOTAR</a></li>
-            <img src="../public/img/inseridos/pegada-nav.png" alt="pegada" class="paw-icon">
-
-            <li><a href="../views/sobre.html">SOBRE NÓS</a></li>
-        </ul>
-    </nav>
-
-    <header class="cabecalho-adocao">
-        <h1>Gatinhos para adoção: Encontre seu novo melhor amigo</h1>
-    </header>
-
-    <main class="fundo-verde">
-        <section class="galeria-infinita">
-
-            <div class="card">
-                <img src="../public/img/gatos/cat-1.jpeg" alt="Luna">
-                <div class="card-info">
-                    <div class="nome-idade">
-                        <h3>Luna</h3>
-                        <span class="idade">1 ano</span>
-                    </div>
-                    <span class="origem">IFAnimal</span>
-                </div>
-                <form action="#" method="post" onsubmit="handleAdopt(event)">
-                    <button class="adotar-btn" type="submit">QUERO ADOTAR</button>
-                </form>
-            </div>
-
-            <div class="card">
-                <img src="../public/img/gatos/cat-2.jpeg" alt="Fernando">
-                <div class="card-info">
-                    <div class="nome-idade">
-                        <h3>Fernando</h3>
-                        <span class="idade">3 anos</span>
-                    </div>
-                    <span class="origem">IFAnimal</span>
-                </div>
-                <form action="../views/adotar.html" method="get">
-                    <button class="adotar-btn" type="submit">QUERO ADOTAR</button>
-                </form>
-            </div>
-
-            <div class="card">
-                <img src="../public/img/gatos/cat-3.jpeg" alt="Roberto">
-                <div class="card-info">
-                    <div class="nome-idade">
-                        <h3>Roberto</h3>
-                        <span class="idade">2 anos</span>
-                    </div>
-                    <span class="origem">IFAnimal</span>
-                </div>
-                <form action="../views/adotar.html" method="get">
-                    <button class="adotar-btn" type="submit">QUERO ADOTAR</button>
-                </form>
-            </div>
-
-            <div class="card">
-                <img src="../public/img/gatos/cat-4.jpeg" alt="Thornado">
-                <div class="card-info">
-                    <div class="nome-idade">
-                        <h3>Thornado</h3>
-                        <span class="idade">4 anos</span>
-                    </div>
-                    <span class="origem">IFAnimal</span>
-                </div>
-                    <form action="../views/adotar.html" method="get">
-                        <button class="adotar-btn" type="submit">QUERO ADOTAR</button>
-                    </form>
-                </div>
-    
-                <div class="card">
-                    <img src="../public/img/gatos/cat-5.jpeg" alt="Tigrinho">
-                    <div class="card-info">
-                        <div class="nome-idade">
-                            <h3>Tigrinho</h3>
-                            <span class="idade">6 meses</span>
-                        </div>
-                        <span class="origem">IFAnimal</span>
-                    </div>
-                    <form action="../views/adotar.html" method="get">
-                        <button class="adotar-btn" type="submit">QUERO ADOTAR</button>
-                    </form>
-                </div>
-    
-                <div class="card">
-                    <img src="../public/img/gatos/cat-6.jpeg" alt="Baleia">
-                    <div class="card-info">
-                        <div class="nome-idade">
-                            <h3>Baleia</h3>
-                            <span class="idade">1 ano</span>
-                        </div>
-                        <span class="origem">IFAnimal</span>
-                    </div>
-                    <form action="../views/adotar.html" method="get">
-                        <button class="adotar-btn" type="submit">QUERO ADOTAR</button>
-                    </form>
-                </div>
-
-        </section>
     </main>
 
     <footer class="footer">
-        <p>IFAnimal - Projeto Social. Maceió - AL, Brasil.</p>
+        <p>IFAnimal - Projeto Social. Maceió - AL, Brasil. <a href="/views/admin.html" style="color: #cbd5e1; text-decoration: none; margin-left: 15px; font-size: 0.8rem;">🔒 Área Restrita</a></p>
     </footer>
 
-<script>
-function handleAdopt(event) {
-    event.preventDefault();
-    alert('Obrigado por seu interesse em adotar! Em breve entraremos em contato.');
-}
-</script>
+    <script src="/js/adotar.js"></script>
 </body>
-
 </html>

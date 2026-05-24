@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>IFAnimal - Admin</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/admin.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body class="fundo-verde" style="display: flex; flex-direction: column; min-height: 100vh; margin: 0;">
+    
+<nav class="navbar">
+    <div class="logo">
+        <img src="/img/inseridos/ifanimal-logo.jpg" alt="IFAnimal Logo">
+    </div>
+    <ul class="nav-links">
+        <li><a href="/views/home.html">VOLTAR AO SITE</a></li>
+        <li id="btn-sair-container" style="display: none;">
+            <button onclick="sair()" class="btn-acao">SAIR</button>
+        </li>
+    </ul>
+</nav>
+
+    <main class="container-admin" style="padding-top: 50px; flex: 1;">
+        <div id="login-section" class="card-admin" style="max-width: 400px; margin: 0 auto;">
+            <h2>Login Restrito</h2>
+            <div class="grupo-input">
+                <label>Usuário</label>
+                <input type="text" id="userLogin" maxlength="30" required>
+            </div>
+            <div class="grupo-input">
+                <label>Senha</label>
+                <input type="password" id="passLogin" maxlength="50" required>
+            </div>
+            <button class="btn-admin-salvar" onclick="fazerLogin()">Entrar</button>
+        </div>
+
+        <div id="panel-section" style="display: none;">
+            <div class="card-admin" style="margin-bottom: 30px;">
+                <div class="secao-admin">
+                    <h2>Cadastrar Novo Gatinho</h2>
+                    <form id="form-add-gato">
+                        <div class="linha-inputs">
+                            <div class="grupo-input">
+                                <label>Nome</label>
+                                <input type="text" id="nomeGato" maxlength="30" placeholder="Nome do gato" required>
+                            </div>
+                            <div class="grupo-input">
+                                <label>Idade (ex: 2 anos)</label>
+                                <input type="text" id="idadeGato" maxlength="15" placeholder="Ex: 2 anos" required>
+                            </div>
+                            <div class="grupo-input">
+                                <label>Origem</label>
+                                <select id="origemGato" required>
+                                    <option value="IFAnimal">IFAnimal</option>
+                                    <option value="Comunidade">Comunidade</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="grupo-input">
+                            <label>Foto do Gato</label>
+                            <input type="file" id="fotoGato" accept="image/*" required>
+                        </div>
+                        <button type="submit" class="btn-admin-salvar">Salvar Gatinho</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card-admin" style="margin-bottom: 30px;">
+                <div class="secao-admin">
+                    <h2>Gerenciar Gatinhos</h2>
+                    <div class="tabela-responsiva">
+                        <table class="tabela-adocoes">
+                            <thead>
+                                <tr><th>Nome</th><th>Idade</th><th>Origem</th><th>Status</th><th>Ações</th></tr>
+                            </thead>
+                            <tbody id="lista-gerenciar-gatos"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-admin">
+                <div class="secao-admin">
+                    <h2>Pedidos de Adoção</h2>
+                    <div class="tabela-responsiva">
+                        <table class="tabela-adocoes">
+                            <thead><tr><th>ID Gato</th><th>Nome Adotante</th><th>Contato</th><th>Ação</th></tr></thead>
+                            <tbody id="lista-adocoes"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer" style="margin-top: auto;">
+        <p>IFAnimal - Projeto Social. Maceió - AL, Brasil.</p>
+    </footer>
+
+    <script src="/js/admin.js"></script>
+</body>
+</html>

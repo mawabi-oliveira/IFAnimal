@@ -1,44 +1,60 @@
-/* --- CABEÇALHO DA PÁGINA DE ADOÇÃO --- */
+/* --- CABEÇALHO --- */
 .cabecalho-adocao {
     text-align: center;
-    padding: 80px 20px 50px; 
+    padding: 60px 20px 30px;
 }
 
 .cabecalho-adocao h1 {
     color: #14532D;
-    font-size: 2.2rem; 
-    max-width: 700px;
-    margin: 0 auto;
-    line-height: 1.3;
+    font-size: 2rem;
+    
 }
 
-/* --- ÁREA CINZA CLARO E GALERIA INFINITA --- */
-.fundo-verde {
-    background-color: #F8FAFC; 
-    width: 100%;
-    padding-top: 70px; 
-    padding-bottom: 70px; 
-}
-
+/* --- GALERIA --- */
 .galeria-infinita {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-    gap: 40px; 
-    padding: 0 20px;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 210px));
+    gap: 30px;
+    padding: 20px;
     max-width: 900px;
     margin: 0 auto;
-    justify-items: center; 
+    justify-content: center;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .cabecalho-adocao {
-        padding: 50px 20px 30px;
-    }
-    .btn-filtro {
-        margin-bottom: 12px; 
-    }
-    .galeria-infinita {
-        gap: 25px;
-    }
+/* --- PAGINAÇÃO --- */
+.paginacao-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 40px 0;
 }
+
+.btn-paginacao {
+    background-color: #0284C7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-paginacao:disabled {
+    background-color: #CBD5E1;
+    cursor: not-allowed;
+}
+
+#pagina-atual {
+    font-weight: bold;
+    color: #14532D;
+}
+
+/* --- Ajuste de layout --- */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+

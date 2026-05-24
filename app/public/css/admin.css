@@ -57,9 +57,10 @@
     font-size: 0.9rem;
 }
 
-.grupo-input input[type="text"],
-.grupo-input select,
-.grupo-input input[type="file"] {
+.grupo-input input,
+.grupo-input select {
+    width: 100%;
+    box-sizing: border-box;
     padding: 12px;
     border: 1px solid #CBD5E1;
     border-radius: 10px;
@@ -155,11 +156,14 @@
     color: white;
 }
 
-.btn-acao.recusar {
+#btn-sair-container button {
     background-color: #ef4444;
     color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
 }
-
 /* --- RESPONSIVIDADE --- */
 @media (max-width: 768px) {
     .linha-inputs {

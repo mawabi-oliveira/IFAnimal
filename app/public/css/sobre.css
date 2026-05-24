@@ -88,7 +88,7 @@
     margin-top: 5px;
 }
 
-.stat-patinha {
+.cat-icone {
     width: 28px;
     height: auto;
     opacity: 0.9;
@@ -206,7 +206,7 @@
         padding: 30px;
     }
 
-    .stat-patinha {
+    .cat-icone {
         transform: rotate(90deg);
     }
 

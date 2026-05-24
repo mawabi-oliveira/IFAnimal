@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Adoção</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/admin.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body class="fundo-verde">
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/img/inseridos/ifanimal-logo.jpg" alt="IFAnimal Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="/views/home.html">INÍCIO</a></li>
+            <img src="/img/inseridos/pegada-nav.png" alt="pegada" class="paw-icon">
+            <li><a href="/views/adotar.html">ADOTAR</a></li>
+            <img src="/img/inseridos/pegada-nav.png" alt="pegada" class="paw-icon">
+            <li><a href="/views/sobre.html">SOBRE NÓS</a></li>
+        </ul>
+    </nav>
+
+    <main class="container-admin" style="padding-top: 50px;">
+        <div class="card-admin">
+            <h2 style="color: #14532D;">Ficha de Adoção: <span id="nome-gato-display"></span></h2>
+            <p>Preencha os dados e o IFAnimal entrará em contato.</p>
+            
+            <form id="form-adocao-user" style="margin-top: 20px;">
+                <div class="grupo-input">
+                    <label>Seu Nome Completo</label>
+                    <input type="text" id="nomeAdotante" maxlength="60" placeholder="Digite seu nome completo" required>
+                </div>
+                <div class="grupo-input">
+                    <label>Telefone (WhatsApp)</label>
+                    <input type="tel" id="telefoneAdotante" maxlength="15" placeholder="(82) 99999-9999" required>
+                </div>
+                <div class="grupo-input">
+                    <label>E-mail</label>
+                    <input type="email" id="emailAdotante" maxlength="80" placeholder="exemplo@email.com" required>
+                </div>
+                <button type="submit" class="btn-admin-salvar">Enviar Pedido de Adoção</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>IFAnimal - Projeto Social. Maceió - AL, Brasil. <a href="/views/admin.html" style="color: #cbd5e1; text-decoration: none; margin-left: 15px; font-size: 0.8rem;">🔒 Área Restrita</a></p>
+    </footer>
+
+    <script src="/js/form-adocao.js"></script>
+</body>
+</html>

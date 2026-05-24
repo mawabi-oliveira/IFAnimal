@@ -1,28 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IFAnimal - Home</title>
-    <link rel="stylesheet" href="../public/css/home.css">
+    <link rel="stylesheet" href="/css/home.css">
 </head>
-
 <body>
     <nav class="navbar">
         <div class="logo">
-            <img src="../public/img/inseridos/ifanimal-logo.jpg" alt="IFAnimal Logo">
+            <img src="/img/inseridos/ifanimal-logo.jpg" alt="IFAnimal Logo">
         </div>
-
         <ul class="nav-links">
-            <li><a href="../views/home.html" class="active">INÍCIO</a></li>
-            <img src="../public/img/inseridos/pegada-nav.png" alt="pegada" class="paw-icon">
-
-            <li><a href="../views/adotar.html">ADOTAR</a></li>
-            <img src="../public/img/inseridos/pegada-nav.png" alt="pegada" class="paw-icon">
-
-            <li><a href="../views/sobre.html">SOBRE NÓS</a></li>
-
+            <li><a href="/views/home.html" class="active">INÍCIO</a></li>
+            <img src="/img/inseridos/pegada-nav.png" alt="pegada" class="paw-icon">
+            <li><a href="/views/adotar.html">ADOTAR</a></li>
+            <img src="/img/inseridos/pegada-nav.png" alt="pegada" class="paw-icon">
+            <li><a href="/views/sobre.html">SOBRE NÓS</a></li>
         </ul>
     </nav>
 
@@ -34,16 +28,11 @@
         <section class="carrossel-container">
             <div class="carrossel-wrapper">
                 <button class="seta-carrossel">❮</button>
-                <div class="carrossel-fotos">
-                    <img src="../public/img/gatos/cat-1.jpeg" alt="Gato 1" class="foto-secundaria">
-                    <img src="../public/img/gatos/cat-2.jpeg" alt="Gato 2" class="foto-principal">
-                    <img src="../public/img/gatos/cat-3.jpeg" alt="Gato 3" class="foto-secundaria">
-                </div>
+                <div class="carrossel-fotos" id="carrossel-fotos">
+                    </div>
                 <button class="seta-carrossel">❯</button>
             </div>
-
-            <div class="indicadores">
-            </div>
+            <div class="indicadores"></div>
         </section>
 
         <div class="chamada-adocao">
@@ -51,63 +40,21 @@
             <p>Conheça alguns de nossos miaumigos</p>
         </div>
 
-        <section class="container-gatos">
-            <div class="card">
-                <img src="../public/img/gatos/cat-1.jpeg" alt="Ameixa">
-                <div class="card-info">
-                    <div class="nome-idade">
-                        <h3>Ameixa</h3>
-                        <span class="idade">2 anos</span>
-                    </div>
-                    <span class="origem">IFAnimal</span>
-                </div>
-                <form action="../views/adotar.html" method="get">
-                    <button class="adotar-btn" type="submit">QUERO ADOTAR</button>
-                </form>
-            </div>
+        <section class="container-gatos" id="galeria-destaques">
+            </section>
 
-            <div class="card">
-                <img src="../public/img/gatos/cat-2.jpeg" alt="Safira">
-                <div class="card-info">
-                    <div class="nome-idade">
-                        <h3>Safira</h3>
-                        <span class="idade">3 anos</span>
-                    </div>
-                    <span class="origem">IFAnimal</span>
-                </div>
-                <form action="../views/adotar.html" method="get">
-                    <button class="adotar-btn" type="submit">QUERO ADOTAR</button>
-                </form>
-            </div>
-
-            <div class="card">
-                <img src="../public/img/gatos/cat-3.jpeg" alt="Roberto">
-                <div class="card-info">
-                    <div class="nome-idade">
-                        <h3>Roberto</h3>
-                        <span class="idade">2 anos</span>
-                    </div>
-                    <span class="origem">Comunidade</span>
-                </div>
-                <form action="../views/adotar.html" method="get">
-                    <button class="adotar-btn" type="submit">QUERO ADOTAR</button>
-                </form>
-            </div>
-
-        <div class="ver-todos-container" style="text-align: center; margin-top: 60px; margin-bottom: 80px;">
-            <a href="../views/adotar.html" class="adotar-btn" style="text-decoration: none; padding: 15px 40px;">
+        <div class="ver-todos-container" style="text-align: center; margin-top: 60px; margin-bottom: 80px; width: 100%;">
+            <a href="/views/adotar.html" class="adotar-btn" style="text-decoration: none; padding: 15px 40px;">
                 VER TODOS OS MIAUMIGOS
             </a>
         </div>
-
-        </section>
     </main>
 
     <footer class="footer">
-        <p>IFAnimal - Projeto Social. Maceió - AL, Brasil.</p>
+        <p>IFAnimal - Projeto Social. Maceió - AL, Brasil. <a href="/views/admin.html" style="color: #cbd5e1; text-decoration: none; margin-left: 15px; font-size: 0.8rem;">🔒 Área Restrita</a></p>
     </footer>
 
-    <script src="./js/script.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/home.js"></script>
 </body>
-
 </html>

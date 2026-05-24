@@ -1,5 +1,4 @@
 /* --- CONFIGURAÇÕES GERAIS --- */
-/* --- CONFIGURAÇÕES GERAIS --- */
 body {
     font-family: 'Arial', sans-serif;
     background: #F8FAFC;
@@ -17,12 +16,12 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../img/inseridos/pegada.png'); /* Caminho relativo voltando uma pasta */
+    background-image: url('/img/inseridos/pegada.png');
     background-repeat: repeat;
-    background-size: 50px; /* Controla o tamanho das patinhas no fundo */
-    opacity: 0.10; /* Deixa as patinhas bem suaves (4% de opacidade) para não poluir visualmente */
-    z-index: -1; /* Mantém o padrão atrás de todo o conteúdo */
-    pointer-events: none; /* Garante que não interfira nos cliques da página */
+    background-size: 50px; 
+    opacity: 0.10; 
+    z-index: -1; 
+    pointer-events: none; 
 }
 
 .container-principal {
@@ -41,18 +40,18 @@ h1, h2, h3 {
 /* --- NAVBAR --- */
 .navbar {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end; /* Mantém os links à direita */
     align-items: center;
-    padding: 0 10%;
-    background-color: rgba(255, 255, 255, 0.4);
-    height: 60px; 
+    padding: 0 5%;           /* Reduzi de 10% para 5% para dar mais espaço */
+    height: 70px;            /* Aumentei um pouco a altura para não comprimir */
     position: relative;
+    
 }
 
 .logo {
     position: absolute;
-    left: 8%;
-    top: 10px; 
+    left: 5%;                /* Alinhado com o padding */
+    top: 5px; 
     z-index: 10;
 }
 
@@ -269,6 +268,7 @@ h1, h2, h3 {
     text-transform: uppercase;
     font-size: 0.8rem; 
     transition: transform 0.2s, background-color 0.2s;
+    text-decoration: none;
 }
 
 .adotar-btn:hover {
@@ -278,7 +278,7 @@ h1, h2, h3 {
 
 /* --- FOOTER --- */
 .footer {
-    background-color: #14532D;
+    background-color: #37483e;
     color: white;
     text-align: center;
     padding: 25px 20px; 
