@@ -1,6 +1,15 @@
+# Node e dependências
 node_modules/
+
+# Variáveis de ambiente
 .env
-db/ifanimal.db
-db/sessions.db
-uploads/
+
+# Arquivos do sistema
 .DS_Store
+
+# Bancos de dados (na pasta app/db)
+app/db/*.db
+app/db/*.sqlite
+
+# Pasta de uploads (na pasta app/uploads)
+app/uploads/
