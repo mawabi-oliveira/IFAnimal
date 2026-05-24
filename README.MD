@@ -16,25 +16,25 @@ O IFAnimal é uma plataforma para um projeto social dedicado à proteção, cuid
 
 📂 Estrutura do Projeto
 
-├── .env                 # Variáveis de ambiente (Credenciais de e-mail e sessão)
-├── server.js            # Inicialização do servidor Node.js e middlewares
-├── controllers/
-│   └── apiController.js # Lógica de negócio, envio de e-mails e comunicação com o banco
-├── db/
-│   └── database.js      # Configuração e inicialização automática do banco SQLite
-├── routes/
-│   └── api.js           # Mapeamento das rotas da API (Públicas e Admin)
-├── public/              # Arquivos estáticos do sistema
-│   ├── css/             # Folhas de estilo modulares (home, adotar, sobre, admin)
-│   ├── img/             # Imagens estáticas (logos, ícones, equipe, gatos iniciais)
-│   └── js/              # Scripts de interação do front-end separados por página
-├── uploads/             # Diretório onde as fotos cadastradas pelo admin são salvas
-└── views/               # Telas do sistema
-    ├── admin.html       # Painel restrito para gestão de gatos e aprovação de adoções
-    ├── adotar.html      # Galeria pública com paginação
-    ├── form-adocao.html # Formulário de contato para adoção
-    ├── home.html        # Página inicial com carrossel dinâmico
-    └── sobre.html       # Histórico, métricas e formas de ajuda
+    ├── .env                 # Variáveis de ambiente (Credenciais de e-mail e sessão)
+    ├── server.js            # Inicialização do servidor Node.js e middlewares
+    ├── controllers/
+    │   └── apiController.js # Lógica de negócio, envio de e-mails e comunicação com o banco
+    ├── db/
+    │   └── database.js      # Configuração e inicialização automática do banco SQLite
+    ├── routes/
+    │   └── api.js           # Mapeamento das rotas da API (Públicas e Admin)
+    ├── public/              # Arquivos estáticos do sistema
+    │   ├── css/             # Folhas de estilo modulares (home, adotar, sobre, admin)
+    │   ├── img/             # Imagens estáticas (logos, ícones, equipe, gatos iniciais)
+    │   └── js/              # Scripts de interação do front-end separados por página
+    ├── uploads/             # Diretório onde as fotos cadastradas pelo admin são salvas
+    └── views/               # Telas do sistema
+        ├── admin.html       # Painel restrito para gestão de gatos e aprovação de adoções
+        ├── adotar.html      # Galeria pública com paginação
+        ├── form-adocao.html # Formulário de contato para adoção
+        ├── home.html        # Página inicial com carrossel dinâmico
+        └── sobre.html       # Histórico, métricas e formas de ajuda
 
 ⚙️ Principais Funcionalidades
 
